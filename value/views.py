@@ -8,7 +8,7 @@ from rest_framework import authentication
 from rest_framework.permissions import IsAuthenticated
 
 # Create your views here.
-
+# Authentication is also added 
 class Property_value(viewsets.ModelViewSet):
     authentication_classes=(authentication.TokenAuthentication,)
     permission_classes=(IsAuthenticated,)
